@@ -1,12 +1,263 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-<title>Page Title</title>
+    <link href="Resources/Style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Resources/Logo.png"/>
+    <title>Alexandra Speranskaya Portfolio/title>
 </head>
+
 <body>
 
-<h1>Alexandra Speranskaya</h1>
-<p>Home About Resume</p>
+    <div class="main-div">
+        <h1>
+            Alexandra Speranskaya
+            <a href="www.linkedin.com/in/alexandra-speranskaya-48758a198" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="25" style="filter: invert(1);"/></a>
+            <a href="https://github.com/AlexandraSperanskaya" target="_blank">
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="25"/></a>
+        </h1>
+
+        <div class="nav-bar">
+            <h2>
+                <a href="#" class="unselected">Projects</a> -
+                <a href="Pages/About.html" class="selected">About</a> -
+                <a href="Pages/Resume.html" class="selected">Resume</a>
+            </h2>
+        </div>
+
+        <h1>Introduction</h1>
+        <hr>
+        <p class="intro">
+            Welcome to my portfolio website! I am Alexandra Speranskaya, and I am a gameplay + graphics programmer with a foundation in C++. 
+            My specialties are finding and fixing bugs, organising and maintaining code and game project files, overseeing version control, and stress-testing.
+        </p>
+
+      
+<h1>Collaborative Game Projects</h1>
+            <hr>
+
+        <div class="grid-container">
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">6502 Assembly</span>
+                                    <span class="tag">Engine</span>
+                                    <span class="tag">Graphics</span>
+
+                                </div>
+                                <a href="Pages/DinoGame.html">NES Dino Game</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Dino Game recreated in <b>Assembly</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/DinoGame.html">
+                                    <img src="Resources/DinoGameLogo.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+          
+
+        </div>
+        <h1>Graphics Projects</h1>
+        <hr>
+
+        <div class="grid-container">
+
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">Graphics</span>
+                                </div>
+                                <a href="Pages/Projects/Vulkan.html">Vulkan Renderer</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Renderer using <b>Vulkan</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/Projects/Vulkan.html">
+                                    <img src="Resources/Vulkan.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">Graphics</span>
+                                </div>
+                                <a href="Pages/Projects/DualRasterizer.html">Dual Rasterizer</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>A Rasterizer with Toggle for <b>CPU</b> and <b>GPU</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/Projects/DualRasterizer.html">
+                                    <img src="Resources/DualRasterizer.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">Graphics</span>
+                                </div>
+                                <a href="Pages/Projects/Raytracer.html">Software Raytracer</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Software Raytracer using <b>SDL2</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/Projects/Raytracer.html">
+                                    <img src="Resources/Raytracer.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+            <h1>Engine Projects</h1>
+            <hr>
+
+        <div class="grid-container">
+
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">Engine</span>
+                                </div>
+                                <a href="Pages/Projects/BurgerTime.html">Burger Time</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Burger Time Clone in <b>self-made Engine</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/Projects/BurgerTime.html">
+                                    <img src="Resources/BurgerTime.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">Lua</span>
+                                    <span class="tag">Engine</span>
+                                </div>
+                                <a href="Pages/Projects/Breakout.html">Breakout</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Breakout using <b>Lua bindings</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/Projects/Breakout.html">
+                                    <img src="Resources/Breakout.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table class="project">
+                    <tr>
+                        <th>
+                            <div class="project-title">
+                                <div class="tags">
+                                    <span class="tag">C++</span>
+                                    <span class="tag">Engine</span>
+                                </div>
+                                <a href="Pages/Projects/Metroid.html">Metroid</a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Metroid Clone using <b>SDL2</b></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="image-wrapper">
+                                <a href="Pages/Projects/Metroid.html">
+                                    <img src="Resources/Metroid.png" class="project" alt="Image" />
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+            
+
+    </div>
 
 </body>
+
 </html>
