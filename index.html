@@ -1,262 +1,90 @@
-<html>
 
+<!DOCTYPE html>
 <head>
-    <link href="Resources/Style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Resources/Logo.png"/>
+    <link rel="stylesheet" href="Resources/Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <title>Alexandra Speranskaya Portfolio</title>
+    <script src="projectslot.js" defer></script>
+    <script src="header.js" defer></script>
+
 </head>
 
 <body>
 
+    <template id="project-slot">
+
+         <div class="grid-item-main">
+                <div class="grid-item-header">
+                                          
+                    <div class="ac">
+                        <a href="#"  class="ab" id="ProjectLink" > Project Title</a>
+                    </div>   
+
+                    <div class="tagset">
+                        <span class="tag">Tag</span>
+                    </div>
+                </div>
+            
+                 <div class="image-wrapper">
+                      <a href="#" id="ImageURL"> <img src="#" alt="Image Alt" id="ImageAlt"/> </a>
+                </div>
+
+
+                <p><slot name="maintext">Project description text</slot></p>
+
+            </div>
+
+
+
+    </template>
+
+
     <div class="main-div">
-        <h1>
-            Alexandra Speranskaya
-            <a href="www.linkedin.com/in/alexandra-speranskaya-48758a198" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="25" style="filter: invert(1);"/></a>
-            <a href="https://github.com/AlexandraSperanskaya" target="_blank">
-                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="25"/></a>
-        </h1>
 
-        <div class="nav-bar">
-            <h2>
-                <a href="#" class="selected"> Projects</a> -
-                <a href="Pages/About.html" class="selected">About</a> -
-                <a href="Pages/Resume.html" class="selected">Resume</a>
-            </h2>
-        </div>
+        <custom-header>
+        </custom-header> 
 
-        <h1>Introduction</h1>
+
+        <h2>Introduction</h2>
         <hr>
-        <p class="intro">
+        <p>
             Welcome to my portfolio website! I am Alexandra Speranskaya, and I am a gameplay + graphics programmer with a foundation in C++. 
             My specialties are finding and fixing bugs, organising and maintaining code and game project files, overseeing version control, and stress-testing.
         </p>
 
       
-<h1>Collaborative Game Projects</h1>
-            <hr>
-
-        <div class="grid-container">
-            <div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">6502 Assembly</span>
-                                    <span class="tag">Engine</span>
-                                    <span class="tag">Graphics</span>
-
-                                </div>
-                                <a href="Pages/DinoGameNES.html">NES Dino Game</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Dino Game recreated in 6502 Assembly</th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/DinoGame.html">
-                                    <img width = "400" src="Resources/DinoGameNES.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-<div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">C++</span>
-                                    <span class="tag">Unreal</span>
-                                    <span class="tag">Gameplay</span>
-                                    <span class="tag">UI</span>
-
-                                </div>
-                                <a href="Pages/RaccNRun.html">Racc'N'Run</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>A multi-player party game.</th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/RaccNRun.html">
-                                    <img width = "400" src="Resources/RaccNRun.gif" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-          
-
-        </div>
-        <h1>Graphics Projects</h1>
+        <h2>Collaborative Game Projects</h2>
         <hr>
 
-        <div class="grid-container">
+        <div class="grid-container-projects">
 
-            <div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">C++</span>
-                                    <span class="tag">Graphics</span>
-                                </div>
-                                <a href="Pages/Projects/Vulkan.html">Vulkan Renderer</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Renderer using <b>Vulkan</b></th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/Vulkan.html">
-                                    <img width = "400" src="Resources/Vulkan.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
 
-            <div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">C++</span>
-                                    <span class="tag">Graphics</span>
-                                </div>
-                                <a href="Pages/Rasterizer.html">Dual Rasterizer</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>A Rasterizer with Toggle for <b>CPU</b> and <b>GPU</b></th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/Rasterizer.html">
-                                    <img width = "400" src="Resources/Rasterizer.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
+            <my-projectslot 
+                projecturl="Pages/DinoGameNES.html"
+                projectname="NES Dino Game"
+                imageurl="Resources/DinoGameNES.png"
+                imagealt="Screenshot of the game start for Dino Game remade in NES"
+                projectdescription="A group project to remake the Chrome Dino Game for the NES - for both the Mesen emulator, and the original hardware!"
+                tag1 = "6502 Assembly"
+                tag2 = "Engine"
+                tag3 = "Graphics">
+            </my-projectslot>
 
-            <div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">C++</span>
-                                    <span class="tag">Graphics</span>
-                                </div>
-                                <a href="Pages/Raytracer.html">Software Raytracer</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Software Raytracer using <b>SDL2</b></th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/Raytracer.html">
-                                    <img width = "400" src="Resources/Raytracer.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
+            <my-projectslot 
+                projecturl="Pages/RaccNRun.html"
+                projectname="Racc'N'Run"
+                imageurl="Resources/RaccNRun.gif"
+                imagealt="Screenshot of the lobby for the game RaccNRun"
+                projectdescription="Multiplayer versus/coop party game."
+                tag1 = "C++"
+                tag2 = "Unreal Engine"
+                tag3 = "Gameplay"
+                tag4 = "UI">
+            </my-projectslot>
 
         </div>
 
-            <h1>Engine and Gameplay Projects</h1>
-            <hr>
-
-        <div class="grid-container">
-
-            <div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">C++</span>
-                                    <span class="tag">Engine</span>
-                                </div>
-                                <a href="Pages/TriangulationForNavmesh.html">Research Project: 2D Navmesh Triangulation</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>A brief research project into the algorithms for generating 2D navigation meshes from random polygons.</th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/TriangulationForNavmesh.html">
-                                    <img width = "400" src="Resources/Triangulation.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-
-            <div>
-                <table class="project">
-                    <tr>
-                        <th>
-                            <div class="project-title">
-                                <div class="tags">
-                                    <span class="tag">C++</span>
-                                    <span class="tag">Lua</span>
-                                    <span class="tag">Engine</span>
-                                </div>
-                                <a href="Pages/DinoGameLua.html">Dino Game In Lua</a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>A basic remake of the Dino Game using <b>Lua bindings</b></th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="image-wrapper">
-                                <a href="Pages/DinoGameLua.html">
-                                    <img width = "400" src="Resources/DinoGameLua.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-
-            
-
-        </div>
-
+       
             
 
     </div>

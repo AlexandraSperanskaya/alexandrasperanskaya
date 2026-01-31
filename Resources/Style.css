@@ -1,0 +1,201 @@
+body {
+    font-family: 'Sen';
+    background-color: #8ba39d;
+}
+
+h1 {
+	font-size: 32px;
+	color: white;
+	text-align: center;
+
+}
+
+.h1-div
+{
+    padding:20px;
+	background-color: #65837b;
+	border-radius: 50px 50px 0px 0px;
+
+}
+
+h2 {
+	font-size: 24px;
+	color: black;
+	margin-left: 15px;
+	margin-bottom: 0px;
+
+}
+
+h3 {
+	font-size: 20px;
+	color: black;
+	margin: 5px;
+	text-align: center;
+
+}
+
+hr {
+    color: black
+}
+
+p {
+	color: black;
+  margin: 15px;
+  padding-bottom: 15px;
+
+}
+
+.main-div {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: white;
+    border-radius: 50px;
+}
+
+.nav-bar {
+	background-color: #72948c;
+	text-align: center;
+  font-size: 18px;
+	padding: 15px;
+}
+
+
+
+
+
+a:link {
+  color: #0d644d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #426a5f;
+}
+
+a:hover {
+  color: #0e8a69;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #11926f;
+  text-decoration: underline;
+}
+
+.ac{
+  color: #0d644d;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+
+.ac:link {
+  color: #0d644d;
+  text-decoration: none;
+  
+}
+
+.ac:visited {
+  color: #426a5f;
+}
+
+.ac:hover {
+  color: #0e8a69;
+  text-decoration: underline;
+}
+
+.ac:active {
+  color: #11926f;
+  text-decoration: underline;
+}
+
+
+
+.ab{
+  color: #d3d3d3;
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+.ab:link {
+  color: #d3d3d3;
+  text-decoration: none;
+
+}
+
+.ab:visited {
+  color: #d3d3d3;
+
+}
+
+.ab:hover {
+  color: #7cd6be;
+  text-decoration: underline;
+
+}
+
+.ab:active {
+  color: #75c9b3;
+  text-decoration: underline;
+
+}
+
+
+
+.grid-container-projects {
+	display:grid;
+	grid-template-columns: auto auto;
+  column-gap: 10px;
+  padding:10px;
+  justify-content: center;
+}
+
+.grid-item-header
+{
+  padding:5px;
+	background-color: #72948c;
+	border-radius: 20px 20px 0px 0px;
+
+}
+.grid-item-main
+{
+
+	background-color: #c1d9d3;
+  border-radius: 20px;
+
+}
+
+.image-margins {
+  padding:10px;
+}
+  
+
+.image-wrapper {
+  width: 100%;
+}
+  
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+
+.tagset {
+
+    text-align: center;
+}
+
+.tag {
+    background-color: #65837b;
+    color: white;
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
