@@ -1,37 +1,23 @@
-<html>
-
+<!DOCTYPE html>
 <head>
-    <link href="Resources/Style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Resources/Logo.png"/>
-    <title>Alexandra Speranskaya Portfolio</title>
+    <link rel="stylesheet" href="../Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <title>Alexandra Speranskaya Portfolio - Projects</title>
+    <script src="../header.js" defer></script>
+
 </head>
 
 <body>
 
+
     <div class="main-div">
-        <h1>
-            Alexandra Speranskaya
-            <a href="www.linkedin.com/in/alexandra-speranskaya-48758a198" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="25" style="filter: invert(1);"/></a>
-            <a href="https://github.com/AlexandraSperanskaya" target="_blank">
-                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="25"/></a>
-        </h1>
 
-        <div class="nav-bar">
-            <h2>
-                <a href="../index.html" class="selected">Projects</a> -
-                <a href="Pages/About.html" class="selected">About</a> -
-                <a href="Pages/Resume.html" class="selected">Resume</a>
-            </h2>
-        </div>
+        <custom-header urlprepend="../"></custom-header> 
 
 
-            <div class="image-wrapper">
-                               <img width = "400" src="../Resources/Triangulation.png" class="project" alt="Image" />
-                            </div>
 
-            <h2>Project</h2>
+            <h2>Polygon Triangulation for 2D Navmesh Generation</h2>
+            <hr>
             <p>
                 This was a short research project for a Gameplay Programming course, where we were free to choose our specific topic from the general theme of programming AI behaviour and navigation.
                 Due to a personal interest in mathematics and algorithms, I chose to learn the basics of how 2D shapes are converted into a triangulated polygon that can be used with the standard node-based 2D navmesh feneration algorithms.
@@ -45,6 +31,15 @@
             </p>
 
             <h2 style="text-align: center;"><a href="https://github.com/AlexandraSperanskaya/ResearchProject_2DNavmeshGeneration" target="_blank">Repository</a></h2>
+
+            <br>
+
+            <div class="image-wrapper">
+                <img src="../Resources/Triangulation.png" class="project" alt="Screenshot of a triangulated set of polygons" />
+
+            </div>
+
+            <br>
         </div>
     </body>
 

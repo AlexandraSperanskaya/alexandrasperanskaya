@@ -10,7 +10,7 @@ h1 {
 
 }
 
-.h1-div
+.h1div
 {
     padding:20px;
 	background-color: #65837b;
@@ -52,7 +52,7 @@ p {
     border-radius: 50px;
 }
 
-.nav-bar {
+.navbar {
 	background-color: #72948c;
 	text-align: center;
   font-size: 18px;
@@ -113,7 +113,7 @@ a:active {
 
 
 
-.ab{
+.headerlink{
   color: #d3d3d3;
   text-decoration: none;
   font-size: 24px;
@@ -121,24 +121,24 @@ a:active {
   margin-bottom: 0px;
 }
 
-.ab:link {
+.headerlink:link {
   color: #d3d3d3;
   text-decoration: none;
 
 }
 
-.ab:visited {
-  color: #d3d3d3;
+.headerlink:visited {
+  color: #0d3227;
 
 }
 
-.ab:hover {
+.headerlink:hover {
   color: #7cd6be;
   text-decoration: underline;
 
 }
 
-.ab:active {
+.headerlink:active {
   color: #75c9b3;
   text-decoration: underline;
 
@@ -175,12 +175,15 @@ a:active {
   
 
 .image-wrapper {
+  margin: auto;
+
   width: 100%;
 }
   
 .video-wrapper {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+  margin: auto;
+  width: 50%;
+
 }
 
 

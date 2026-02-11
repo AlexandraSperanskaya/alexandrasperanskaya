@@ -1,53 +1,45 @@
-<html>
-
+<!DOCTYPE html>
 <head>
-    <link href="Resources/Style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Resources/Logo.png"/>
-    <title>Alexandra Speranskaya Portfolio</title>
+    <link rel="stylesheet" href="../Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <title>Alexandra Speranskaya Portfolio - Projects</title>
+    <script src="../header.js" defer></script>
+
 </head>
 
 <body>
 
+
     <div class="main-div">
-        <h1>
-            Alexandra Speranskaya
-            <a href="www.linkedin.com/in/alexandra-speranskaya-48758a198" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="25" style="filter: invert(1);"/></a>
-            <a href="https://github.com/AlexandraSperanskaya" target="_blank">
-                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="25"/></a>
-        </h1>
 
-        <div class="nav-bar">
-            <h2>
-                <a href="../index.html" class="selected">Projects</a> -
-                <a href="Pages/About.html" class="selected">About</a> -
-                <a href="Pages/Resume.html" class="selected">Resume</a>
-            </h2>
-        </div>
+        <custom-header urlprepend="../"></custom-header> 
 
 
-            <div class="image-wrapper">
-                                <a href="Pages/Vulkan.html">
-                                    <img width = "400" src="Resources/Vulkan.png" class="project" alt="Image" />
-                                </a>
-                            </div>
 
-            <h2>Project</h2>
+            <h2>Basic Raytracer</h2>
+            <hr>
             <p>
-                
+                A basic raytracer renderer that is capable of loading a model, and uses PBR.
                 
 
             </p>
 
             <h2>Software</h2>
             <p>
-                - Unreal 5.3<br/>
                 - Visual Studio<br/>
-                - P4V<br/>
             </p>
 
-            <h2 style="text-align: center;"><a href="https://github.com/AlexandraSperanskaya/GraphicsProgramming_Vulkan" target="_blank">Repository</a></h2>
+            <h2 style="text-align: center;"><a href="https://github.com/AlexandraSperanskaya/GraphicsProgramming_Rasteriser" target="_blank">Repository</a></h2>
+
+            <br>
+
+            <div class="image-wrapper">
+                <img src="../Resources/RaytracerBunny.png" class="project" alt="Screenshot of a 3d rabbit model rendered with a simple raytracer" />
+                <img src="../Resources/RaytracerObjects.png" class="project" alt="Screenshot of spheres with different materials (roughness and metallness)" />
+
+            </div>
+
+            <br>
         </div>
     </body>
 

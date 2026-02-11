@@ -1,11 +1,10 @@
 class  MyHeader extends HTMLElement {
 
-     
+     static observedAttributes = ["urlprepend"];
 
     constructor() {
       super();
-      
-    }
+      }
 
   connectedCallback() {
     // Create a shadow root
@@ -13,7 +12,7 @@ class  MyHeader extends HTMLElement {
 
 
     const headerdiv = document.createElement("div");
-    headerdiv.setAttribute("class", "h1-div");
+    headerdiv.setAttribute("class", "h1div");
 
     const topdiv = document.createElement("h1");
     topdiv.setAttribute("class", "h1");
@@ -40,28 +39,77 @@ class  MyHeader extends HTMLElement {
     imgGithub.width = 25;
     imgGithub.height = 25;
 
+    const imagedivider = document.createElement("span");
+    imagedivider.setAttribute("class", "h1");
+    imagedivider.textContent = "  ";
+
     const navbar = document.createElement("div");
-    navbar.setAttribute("class", "nav-bar");
+    navbar.setAttribute("class", "navbar");
 
     const homelink = document.createElement("a");
-    homelink.setAttribute("href", "#");
+
+    if (this.hasAttribute("urlprepend"))
+     {
+        homelink.setAttribute("href", this.getAttribute("urlprepend") + "index.html" );
+    } 
+    else 
+    {
+      homelink.setAttribute("href", "index.html");
+    }
+
+
     homelink.textContent = "Projects";
-    homelink.setAttribute("class", "ab");
+    homelink.setAttribute("class", "headerlink");
 
     const aboutlink = document.createElement("a");
-    aboutlink.setAttribute("href", "Pages/About.html");
+    if (this.hasAttribute("urlprepend"))
+    {
+      aboutlink.setAttribute("href", "About.html");
+    } 
+    else 
+    {
+      aboutlink.setAttribute("href", "Pages/About.html");
+    }
+
+
     aboutlink.textContent = "About";
-    aboutlink.setAttribute("class", "ab");
+    aboutlink.setAttribute("class", "headerlink");
 
     const cvlink = document.createElement("a");
-    cvlink.setAttribute("href", "Pages/CV.html");
+
+    if (this.hasAttribute("urlprepend"))
+    {
+      cvlink.setAttribute("href", "CV.html");
+    } 
+    else 
+    {
+      cvlink.setAttribute("href", "Pages/CV.html");
+    }
+
+
     cvlink.textContent = "CV";
-    cvlink.setAttribute("class", "ab");
+    cvlink.setAttribute("class", "headerlink");
+
+    const linkdividerone = document.createElement("span");
+    linkdividerone.setAttribute("class", "headerlink");
+    linkdividerone.textContent = " | ";
+    const linkdividertwo = document.createElement("span");
+    linkdividertwo.setAttribute("class", "headerlink");
+    linkdividertwo.textContent = " | ";
 
  // Apply external styles to the shadow dom
     const linkElem = document.createElement("link");
     linkElem.setAttribute("rel", "stylesheet");
-    linkElem.setAttribute("href", "Style.css" );
+
+    if (this.hasAttribute("urlprepend"))
+      {
+        linkElem.setAttribute("href", this.getAttribute("urlprepend") + "Style.css" );
+      } 
+    else 
+    {
+      linkElem.setAttribute("href", "Style.css" );
+    }
+
 
     shadow.appendChild(linkElem);
     shadow.appendChild(headerdiv);
@@ -70,12 +118,15 @@ class  MyHeader extends HTMLElement {
 
     topdiv.appendChild(linkedinHyperlink);
     linkedinHyperlink.appendChild(imgLinkedin);
+    topdiv.appendChild(imagedivider);
     topdiv.appendChild(githubHyperlink);
     githubHyperlink.appendChild(imgGithub);
 
     shadow.appendChild(navbar);
     navbar.appendChild(homelink);
+    navbar.appendChild(linkdividerone);
     navbar.appendChild(aboutlink);
+    navbar.appendChild(linkdividertwo);
     navbar.appendChild(cvlink);
 
    

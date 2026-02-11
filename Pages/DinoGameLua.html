@@ -1,53 +1,44 @@
-<html>
-
+<!DOCTYPE html>
 <head>
-    <link href="Resources/Style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Resources/Logo.png"/>
-    <title>Alexandra Speranskaya Portfolio</title>
+    <link rel="stylesheet" href="../Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <title>Alexandra Speranskaya Portfolio - Projects</title>
+    <script src="../header.js" defer></script>
+
 </head>
 
 <body>
 
+
     <div class="main-div">
-        <h1>
-            Alexandra Speranskaya
-            <a href="www.linkedin.com/in/alexandra-speranskaya-48758a198" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="25" style="filter: invert(1);"/></a>
-            <a href="https://github.com/AlexandraSperanskaya" target="_blank">
-                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="25"/></a>
-        </h1>
 
-        <div class="nav-bar">
-            <h2>
-                <a href="../index.html" class="selected">Projects</a> -
-                <a href="Pages/About.html" class="selected">About</a> -
-                <a href="Pages/Resume.html" class="selected">Resume</a>
-            </h2>
-        </div>
+        <custom-header urlprepend="../"></custom-header> 
 
+            <h2>Lua-Based Chrome Dino Game</h2>
+            <hr>
 
-            <div class="image-wrapper">
-                                <a href="Pages/Vulkan.html">
-                                    <img width = "400" src="Resources/Vulkan.png" class="project" alt="Image" />
-                                </a>
-                            </div>
-
-            <h2>Project</h2>
             <p>
-                
+                For the Software Engineering course at my university, I had an assignment to remake a game of my choice using Lua: the university provided a base starting engine to use for setting up the Lua bindings,
+                but the game itself could only be constructed via Lua. I chose to remake the Chrome Dino game, as I was interested in seeing just how different it would be from making it
+                in assembly.
                 
 
             </p>
 
             <h2>Software</h2>
             <p>
-                - Unreal 5.3<br/>
                 - Visual Studio<br/>
-                - P4V<br/>
             </p>
+            <br>
 
-            <h2 style="text-align: center;"><a href="https://github.com/AlexandraSperanskaya/GraphicsProgramming_Vulkan" target="_blank">Repository</a></h2>
+            <h2 style="text-align: center;"><a href="github.com/AlexandraSperanskaya/Lua-Based_DinoGame" target="_blank">Repository</a></h2>
+            <br>
+
+            <div class="image-wrapper">
+                <img src="../Resources/DinoGameLua.png" class="project" alt="Screenshot of starting frame of chrome dino game remade with Lua" />
+            </div>
+
+            <br>
         </div>
     </body>
 

@@ -6,7 +6,7 @@
     <title>Alexandra Speranskaya Portfolio</title>
     <script src="projectslot.js" defer></script>
     <script src="header.js" defer></script>
-
+    <noscript>To use this site, please enable JavaScript.</noscript>
 </head>
 
 <body>
@@ -15,9 +15,7 @@
 
     <div class="main-div">
 
-        <custom-header>
-        </custom-header> 
-
+        <custom-header></custom-header>
 
         <h2>Introduction</h2>
         <hr>
@@ -32,6 +30,17 @@
 
         <div class="grid-container-projects">
 
+            <my-projectslot 
+                projecturl="Pages/ShadowFrames.html"
+                projectname="Shadow Frames"
+                imageurl="Resources/ShadowFrames.png"
+                imagealt="Black and white image of a bar."
+                projectdescription="An atmospheric horror game."
+                tag1 = "C++"
+                tag2 = "Unreal Engine"
+                tag3 = "Gameplay"
+                tag4 = "UI">
+            </my-projectslot>
 
             <my-projectslot 
                 projecturl="Pages/DinoGameNES.html"
@@ -55,11 +64,89 @@
                 tag3 = "Gameplay"
                 tag4 = "UI">
             </my-projectslot>
+        <br>
+        <br>
+
+        <h2>Graphics Programming</h2>
+        <hr>
+
+        <div class="grid-container-projects">
+
+            <my-projectslot 
+                projecturl="Pages/Vulkan.html"
+                projectname="Vulkan Renderer"
+                imageurl="Resources/Vulkan.png"
+                imagealt=" "
+                projectdescription="Basic scene renderer in Vulkan."
+                tag1 = "C++"
+                tag2 = "Vulkan"
+                tag3 = "Graphics">
+            </my-projectslot>
+
+            <my-projectslot 
+                projecturl="Pages/DinoGameNES.html"
+                projectname="DirectX Renderer"
+                imageurl="Resources/DirectX_still.png"
+                imagealt="A screenshot of a vehicle on a blue background."
+                projectdescription="Basic renderer with DX11."
+                tag1 = "C++"
+                tag2 = "Graphics"
+                tag3 = "DirectX">
+            </my-projectslot>
+
+            <my-projectslot 
+                projecturl="Pages/Raytracer.html"
+                projectname="Raytracer Renderer"
+                imageurl="Resources/RaytracerObjects.png"
+                imagealt="Spheres of different materials, varying in roughness, metal/not metal."
+                projectdescription="Basic raytracer renderer."
+                tag1 = "C++"
+                tag2 = "Graphics">
+            </my-projectslot>
+
+            <my-projectslot 
+                projecturl="Pages/Rasterizer.html"
+                projectname="Rasterizer Renderer"
+                imageurl="Resources/Rasterizer.png"
+                imagealt="A screenshot of a vehicle on a grey background."
+                projectdescription="Basic rasterizer renderer."
+                tag1 = "C++"
+                tag2 = "Graphics">
+            </my-projectslot>
 
         </div>
 
        
-            
+            <br>
+        <br>
+        
+        <h2>Other</h2>
+        <hr>
+
+        <div class="grid-container-projects">
+
+            <my-projectslot 
+                projecturl="Pages/ShadowFrames.html"
+                projectname="Combining and Triangulating Polygons for 2D Navigation"
+                imageurl="Resources/Triangulation.png"
+                imagealt="A triangulated polygon, built from a set of overlapping squares."
+                projectdescription="A brief research project into the algorithms for generating 2D navigation meshes from random polygons."
+                tag1 = "C++"
+                tag2 = "Engine">
+            </my-projectslot>
+
+            <my-projectslot 
+                projecturl="Pages/DinoGameLua.html"
+                projectname="Lua Dino Game"
+                imageurl="Resources/DinoGameNES.png"
+                imagealt="Screenshot of the game start for Dino Game remade in Lua"
+                projectdescription="Remake of Dino Game with Lua bindings in a provided basic game engine."
+                tag1 = "C++"
+                tag2 = "Engine"
+                tag3 = "Lua">
+            </my-projectslot>
+
+        </div>
 
     </div>
 
